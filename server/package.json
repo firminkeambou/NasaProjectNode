@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/server.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "test-watch": "jest --watch",
     "watch": "nodemon src/server.js",
     "start": "export PORT=8000 && node src/server.js",
@@ -20,7 +20,7 @@
     "express": "^5.1.0",
     "mongoose": "^8.16.5",
     "morgan": "^1.10.0",
-    "pm2": "^6.0.8"
+    "pm2": "^6.3.1"
   },
   "devDependencies": {
     "jest": "^30.0.4",

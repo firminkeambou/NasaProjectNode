@@ -9,7 +9,7 @@ const planets = require('./planets.schema.mongo'); // importing the model create
 // a readable Stream is a kind of eventEmitter
 //parse function returns an event emitter, but parse only deal with  stream of data
 // const variable  means we can't reassign the variable, but we can update the content hold by the variable especialy if it's an array
-const habitablePlanets = [];
+//const habitablePlanets = [];  === all data structure without mongoDB
 
 function isHabitablePlanet(planet) {
   return (
@@ -37,12 +37,16 @@ function loadPlanetsData() {
       )
       .on('data', async (data) => {
         if (isHabitablePlanet(data)) {
+          //read a file and insert in a database
           //TODO: Replace below create with insert + update === upsert
           // storing data in MongoDB
+          savePlanet(data);
           // we are using the model to create a new document in the database
+          /*
           await planets.create({
             keplerName: data['kepler_name'], // we are using the name of the planet as it is in the CSV file
-          }); // storing data in MongoDB
+          });*/
+          // storing data in MongoDB
 
           //habitablePlanets.push(data);
         }
@@ -51,8 +55,9 @@ function loadPlanetsData() {
         console.log(err);
         reject(err); // message send back if the promise is failed
       })
-      .on('end', () => {
-        console.log(`${habitablePlanets.length} habitable planets found!`);
+      .on('end', async () => {
+        const countPlanetsFound = (await getAllPlanets()).length;
+        console.log(`${countPlanetsFound} habitable planets found!`);
         //console.log('Done')
         resolve(); // resolving the promise, but we didn't return anything because
       });
@@ -60,12 +65,33 @@ function loadPlanetsData() {
 }
 // returns all the planets
 getAllPlanets = async () => {
-  return await planets.find({}, { _id: 0, __v: 0 }); // find all planets because of "{}" object which is a filter, here we have empty filter, but exclude the _id (_id:0) and __v (__v:0) fields from the result ()
+  return await planets.find({}, { _id: 0, __v: 0 }); // excluding "_id", "__v"
+  //return await planets.find({}, { _id: 0, __v: 0 }); // find all planets because of "{}" object which is a filter, here we have empty filter, but exclude the _id (_id:0) and __v (__v:0) fields from the result ()
   //return habitablePlanets; /before using mongoDB/ returns an array of all planets in the format needed by our controller
 };
 // when exporting, you can decide which key to set for the object being exporting
 // a bit of a concepttual program when we need to export something that relies on an asynchronous code
 //loadPlanetsData
+
+savePlanet = async (planet) => {
+  // updateOne(param1,param2,param3) // param1=filter what to find, param2 = update to be done; param3 = upsert means create if the data don't exist or update if the data do exist
+  try {
+    await planets.updateOne(
+      {
+        keplerName: planet.kepler_name,
+      },
+      {
+        keplerName: planet.kepler_name,
+      },
+      {
+        upsert: true,
+      }
+    );
+  } catch (err) {
+    console.error(`could not save planet  ${err}`);
+  }
+};
+
 module.exports = {
   loadPlanetsData,
   getAllPlanets,

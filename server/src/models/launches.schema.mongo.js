@@ -47,6 +47,6 @@ const launchesSchema = new mongoose.Schema({
     default: true, // default value for the success field
   },
 });
-//this name "Launch" should always be singular, and mongo will automatically create a collection with the plural name "launches"
+//this name "Launch" should always be singular, and mongo will automatically create a collection with the plural version of the name "launches"
 // the first argument is the name of the model, the second argument is the schema
 module.exports = mongoose.model('Launch', launchesSchema); // creating and exporting the model so it can be used in other files
