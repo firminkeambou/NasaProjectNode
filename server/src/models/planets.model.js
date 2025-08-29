@@ -74,7 +74,7 @@ getAllPlanets = async () => {
 //loadPlanetsData
 
 savePlanet = async (planet) => {
-  // updateOne(param1,param2,param3) // param1=filter what to find, param2 = update to be done; param3 = upsert means create if the data don't exist or update if the data do exist
+  // updateOne(param1,param2,param3) // param1=filter what to find, param2 = update to be done; param3 = upsert means create if the data dosn't exist or update if the data do exist
   try {
     await planets.updateOne(
       {

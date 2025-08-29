@@ -17,7 +17,7 @@ describe('TEst Lanches API', () => {
   describe('Test Get /launches', () => {
     test('it should response with 200 success', async () => {
       const response = await request(app)
-        .get('/launches')
+        .get('/v1/launches')
         .expect('Content-Type', /json/) // Check if the response is in JSON format  (/json/ here is a regular expression that matches any string that contains "json")
         .expect(200);
     });
@@ -44,7 +44,7 @@ describe('TEst Lanches API', () => {
 
     test('it should respond with 201 created', async () => {
       const response = await request(app)
-        .post('/launches')
+        .post('/v1/launches')
         .send(completeLaunchData)
         .expect('Content-Type', /json/) // Check if the response is in JSON format which is part of the header
         .expect(201); // Check if the response status is 201 which is part of the header
@@ -61,7 +61,7 @@ describe('TEst Lanches API', () => {
 
     test('it should catch missing required properties', async () => {
       const response = await request(app)
-        .post('/launches')
+        .post('/v1/launches')
         .send(completeLaunchDataWithInvalidDate) // Send the data with an invalid launchDate
         .expect('Content-Type', /json/) // Check if the response is in JSON format which is part of the header
         .expect(400); // Check if the response status is 400 which is part of the header
@@ -71,7 +71,7 @@ describe('TEst Lanches API', () => {
 
     test('it should catch invalid dates ', async () => {
       const response = await request(app)
-        .post('/launches')
+        .post('/v1/launches')
         .send(completeLaunchDataWithoutDate) // Send the data without the launchDate property
         .expect('Content-Type', /json/) // Check if the response is in JSON format which is part of the header
         .expect(400); // Check if the response status is 400 which is part of the header
