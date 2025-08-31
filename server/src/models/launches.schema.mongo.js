@@ -35,7 +35,7 @@ const launchesSchema = new mongoose.Schema({
   },
   customers: {
     type: [String], // array of strings, like a list of customers
-    required: true,
+    //required: true, we comment out this section because we want to allow launches without planets at this time
   },
   upcoming: {
     type: Boolean,

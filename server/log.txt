@@ -1,272 +1,221 @@
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-::1 - - [13/Aug/2025:13:21:50 +0000] "GET /planets HTTP/1.1" 200 243 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:13:21:50 +0000] "GET /launches HTTP/1.1" 200 2269 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:13:22:28 +0000] "POST /launches HTTP/1.1" 201 210 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:13:22:29 +0000] "GET /launches HTTP/1.1" 200 2480 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:13:25:09 +0000] "DELETE /launches/101 HTTP/1.1" 500 1616 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-TypeError: launches.has is not a function
-    at existsLaunchWithId (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\src\models\launches.model.js:75:19)
-    at httpAbortLaunch (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\src\routes\launches\launches.controller.js:44:8)
-    at Layer.handleRequest (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\lib\layer.js:152:17)
-    at next (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\lib\route.js:157:13)
-    at Route.dispatch (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\lib\route.js:117:3)
-    at handle (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\index.js:435:11)
-    at Layer.handleRequest (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\lib\layer.js:152:17)
-    at C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\index.js:295:15
-    at param (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\index.js:600:14)
-    at param (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\index.js:610:14)
-::1 - - [13/Aug/2025:14:26:35 +0000] "DELETE /launches/109 HTTP/1.1" 500 1616 "-" "PostmanRuntime/7.45.0"
-TypeError: launches.has is not a function
-    at existsLaunchWithId (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\src\models\launches.model.js:75:19)
-    at httpAbortLaunch (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\src\routes\launches\launches.controller.js:44:8)
-    at Layer.handleRequest (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\lib\layer.js:152:17)
-    at next (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\lib\route.js:157:13)
-    at Route.dispatch (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\lib\route.js:117:3)
-    at handle (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\index.js:435:11)
-    at Layer.handleRequest (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\lib\layer.js:152:17)
-    at C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\index.js:295:15
-    at param (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\index.js:600:14)
-    at param (C:\COMPANY\UDEMY\DEMOS\Node\Section9_10_NASA_Project\NASA-PROJECT\server\node_modules\router\index.js:610:14)
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
-8 habitable planets found!
- Listening on port 8000 ...
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-::1 - - [13/Aug/2025:14:30:05 +0000] "GET /planets HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:14:30:05 +0000] "GET /launches HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:14:30:07 +0000] "GET /launches HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:14:30:07 +0000] "GET /planets HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:14:30:09 +0000] "GET /planets HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:14:30:09 +0000] "GET /launches HTTP/1.1" - - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:14:30:14 +0000] "GET /launches HTTP/1.1" 200 2480 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:14:30:14 +0000] "GET /planets HTTP/1.1" 200 243 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:14:33:33 +0000] "DELETE /launches/109 HTTP/1.1" 200 92 "-" "PostmanRuntime/7.45.0"
-::1 - - [13/Aug/2025:14:34:08 +0000] "GET /planets HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:14:34:08 +0000] "GET /launches HTTP/1.1" 200 2482 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-::1 - - [13/Aug/2025:16:02:11 +0000] "DELETE /launches/101 HTTP/1.1" 200 4 "-" "PostmanRuntime/7.45.0"
-::1 - - [13/Aug/2025:16:05:19 +0000] "GET /launches HTTP/1.1" 200 2484 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:05:20 +0000] "GET /planets HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-::1 - - [13/Aug/2025:16:10:31 +0000] "DELETE /launches/104 HTTP/1.1" 200 11 "-" "PostmanRuntime/7.45.0"
-::1 - - [13/Aug/2025:16:10:41 +0000] "DELETE /launches/1045 HTTP/1.1" 404 44 "-" "PostmanRuntime/7.45.0"
-::1 - - [13/Aug/2025:16:11:11 +0000] "GET /launches HTTP/1.1" 200 2486 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:11:11 +0000] "GET /planets HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-::1 - - [13/Aug/2025:16:13:22 +0000] "DELETE /launches/1045 HTTP/1.1" 404 44 "-" "PostmanRuntime/7.45.0"
-::1 - - [13/Aug/2025:16:13:25 +0000] "DELETE /launches/1045 HTTP/1.1" 404 44 "-" "PostmanRuntime/7.45.0"
-::1 - - [13/Aug/2025:16:13:59 +0000] "DELETE /launches/106 HTTP/1.1" 200 2 "-" "PostmanRuntime/7.45.0"
-::1 - - [13/Aug/2025:16:14:05 +0000] "DELETE /launches/1067 HTTP/1.1" 404 44 "-" "PostmanRuntime/7.45.0"
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-::1 - - [13/Aug/2025:16:15:30 +0000] "DELETE /launches/1067 HTTP/1.1" 404 44 "-" "PostmanRuntime/7.45.0"
-::1 - - [13/Aug/2025:16:15:32 +0000] "DELETE /launches/1067 HTTP/1.1" 404 44 "-" "PostmanRuntime/7.45.0"
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-::1 - - [13/Aug/2025:16:18:59 +0000] "DELETE /launches/1067 HTTP/1.1" 404 44 "-" "PostmanRuntime/7.45.0"
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-Connected to MongoDB successfully!
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-8 habitable planets found!
- Listening on port 8000 ...
-::1 - - [13/Aug/2025:16:21:02 +0000] "DELETE /launches/1067 HTTP/1.1" 404 44 "-" "PostmanRuntime/7.45.0"
-le freeboyyyyyyyyyyyy true
-::1 - - [13/Aug/2025:16:36:59 +0000] "DELETE /launches/105 HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-le freeboyyyyyyyyyyyy false
-::1 - - [13/Aug/2025:16:36:59 +0000] "DELETE /launches/105 HTTP/1.1" 400 30 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:37:01 +0000] "GET /launches HTTP/1.1" 200 2490 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:37:01 +0000] "GET /planets HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-le freeboyyyyyyyyyyyy true
-::1 - - [13/Aug/2025:16:37:17 +0000] "DELETE /launches/107 HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:37:24 +0000] "GET /planets HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:37:24 +0000] "GET /launches HTTP/1.1" 200 2492 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-le freeboyyyyyyyyyyyy true
-::1 - - [13/Aug/2025:16:37:40 +0000] "DELETE /launches/108 HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:37:54 +0000] "GET /planets HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:37:54 +0000] "GET /launches HTTP/1.1" 200 2494 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-le freeboyyyyyyyyyyyy true
-::1 - - [13/Aug/2025:16:38:31 +0000] "DELETE /launches/110 HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:38:39 +0000] "GET /planets HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:38:39 +0000] "GET /launches HTTP/1.1" 200 2496 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-le freeboyyyyyyyyyyyy true
-::1 - - [13/Aug/2025:16:38:56 +0000] "DELETE /launches/112 HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:39:14 +0000] "GET /planets HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:39:14 +0000] "GET /launches HTTP/1.1" 200 2498 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-le freeboyyyyyyyyyyyy true
-::1 - - [13/Aug/2025:16:39:22 +0000] "DELETE /launches/111 HTTP/1.1" 200 2 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:39:42 +0000] "GET /planets HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
-::1 - - [13/Aug/2025:16:39:42 +0000] "GET /launches HTTP/1.1" 200 2500 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+
+> nasaapi-server@1.0.0 start
+> export PORT=8000 && node src/server.js
+
+Connected to MongoDB successfully!
+8 habitable planets found!
+Downloading launch data ...
+1 FalconSat
+2 DemoSat
+3 Trailblazer
+4 RatSat
+5 RazakSat
+6 Falcon 9 Test Flight
+7 COTS 1
+8 COTS 2
+9 CRS-1
+10 CRS-2
+11 CASSIOPE
+12 SES-8
+13 Thaicom 6
+14 CRS-3
+15 OG-2 Mission 1
+16 AsiaSat 8
+17 AsiaSat 6
+18 CRS-4
+19 CRS-5
+20 DSCOVR
+21 ABS-3A / Eutelsat 115W B
+22 CRS-6
+23 TürkmenÄlem 52°E / MonacoSAT
+24 CRS-7
+25 OG-2 Mission 2
+26 Jason 3
+27 SES-9
+28 CRS-8
+29 JCSAT-2B
+30 Thaicom 8
+31 ABS-2A / Eutelsat 117W B
+32 CRS-9
+33 JCSAT-16
+34 Amos-6
+35 Iridium NEXT Mission 1
+36 CRS-10
+37 EchoStar 23
+38 SES-10
+39 NROL-76
+40 Inmarsat-5 F4
+41 CRS-11
+42 BulgariaSat-1
+43 Iridium NEXT Mission 2
+44 Intelsat 35e
+45 CRS-12
+46 FormoSat-5
+47 Boeing X-37B OTV-5
+48 Iridium NEXT Mission 3
+49 SES-11 / Echostar 105
+50 KoreaSat 5A
+51 CRS-13
+52 Iridium NEXT Mission 4
+53 ZUMA
+54 SES-16 / GovSat-1
+55 Falcon Heavy Test Flight
+56 Paz / Starlink Demo
+57 Hispasat 30W-6
+58 Iridium NEXT Mission 5
+59 CRS-14
+60 TESS
+61 Bangabandhu-1
+62 Iridium NEXT Mission 6
+63 SES-12
+64 CRS-15
+65 Telstar 19V
+66 Iridium NEXT Mission 7
+67 Merah Putih
+68 Telstar 18V
+69 SAOCOM 1A
+70 Es’hail 2
+71 SSO-A
+72 CRS-16
+73 GPS III SV01
+74 Iridium NEXT Mission 8
+75 Nusantara Satu (PSN-6) / S5 / Beresheet
+76 CCtCap Demo Mission 1
+77 ArabSat 6A
+78 CRS-17
+79 Starlink v0.9
+80 RADARSAT Constellation
+81 STP-2
+82 CRS-18
+83 Amos-17
+84 Starlink-1
+85 CRS-19
+86 JCSat 18 / Kacific 1
+87 Starlink-2
+88 Crew Dragon In Flight Abort Test
+89 Starlink-3
+90 Starlink-4
+91 CRS-20
+92 Starlink-5
+93 Starlink-6
+95 Starlink-7
+94 CCtCap Demo Mission 2
+96 Starlink-8 & SkySat 16-18
+101 SAOCOM 1B, GNOMES-1, Tyvak-0172
+97 GPS III SV03 (Columbus)
+111 SXM-7
+106 GPS III SV04 (Sacagawea)
+107 Crew-1
+131 GPS III SV05
+110 CRS-21
+113 Turksat 5A
+98 ANASIS-II
+99 Starlink-9 (v1.0) & BlackSky Global 5-6
+100 Starlink-10 (v1.0) & SkySat 19-21
+108 Sentinel-6 Michael Freilich
+102 Starlink-11 (v1.0)
+103 Starlink-12 (v1.0)
+104 Starlink-13 (v1.0)
+105 Starlink-14 (v1.0)
+112 NROL-108
+109 Starlink-15 (v1.0)
+114 Starlink-16 (v1.0)
+118 Starlink-17 (v1.0)
+115 Transporter-1
+168 SARah 1
+123 Crew-2
+130 SXM-8
+129 CRS-22 & IROSA
+142 Türksat 5B
+138 DART
+133 CRS-23
+136 Crew-3
+116 Starlink-18 (v1.0)
+117 Starlink-19 (v1.0)
+119 Starlink-20 (v1.0)
+120 Starlink-21 (v1.0)
+132 Transporter-2
+121 Starlink-22 (v1.0)
+122 Starlink-23 (v1.0)
+124 Starlink-24 (v1.0)
+125 Starlink-25 (v1.0)
+127 Starlink-26 (v1.0) + Capella-6 + Tyvak-0130
+126 Starlink-27 (v1.0)
+128 Starlink-28 (v1.0)
+148 NROL-87
+135 Inspiration4
+134 Starlink 2-1 (v1.5)
+140 IXPE
+139 Starlink 4-3 (v1.5)
+143 CRS-24
+147 CSG-2
+137 Starlink 4-1 (v1.5)
+141 Starlink 4-4 (v1.5)
+145 Transporter-3
+144 Starlink 4-5 (v1.5)
+146 Starlink 4-6 (v1.5)
+149 Starlink 4-7 (v1.5)
+156 Ax-1
+150 Starlink 4-8 (v1.5)
+151 Starlink 4-11 (v1.5)
+152 Starlink 4-9 (v1.5)
+153 Starlink 4-10 (v1.5)
+154 Starlink 4-12 (v1.5)
+155 Transporter-4
+158 Starlink 4-14 (v1.5)
+157 NROL-85
+159 Crew-4
+166 Nilesat-301
+165 Transporter-5
+173 CRS-25
+200 WorldView Legion 1 & 2
+203 O3b mPower 3.4
+170 SES-22
+188 USSF-44
+196 O3b mPower 1,2
+163 Starlink 4-15 (v1.5)
+162 Starlink 4-13 (v1.5)
+160 Starlink 4-16 (v1.5)
+161 Starlink 4-17 (v1.5)
+164 Starlink 4-18 (v1.5)
+167 Starlink 4-19 (v1.5)
+169 Globalstar FM15
+171 Starlink 4-21 (v1.5)
+172 Starlink 3-1 (v1.5)
+174 Starlink 4-22 (v1.5)
+175 Starlink 3-2 (v1.5)
+176 Starlink 4-25 (v1.5)
+177 KPLO
+184 Starlink 4-2 (v1.5) & Blue Walker 3
+178 Starlink 4-26 (v1.5)
+187 Crew-5
+179 Starlink 3-3 (v1.5)
+180 Starlink 4-27 (v1.5)
+181 Starlink 4-23 (v1.5)
+183 Starlink 4-20 (v1.5) & Sherpa LTC-2/Varuna-TDM
+182 Starlink 3-4 (v1.5)
+185 Starlink 4-34 (v1.5)
+186 Starlink 4-35 (v1.5)
+188 Starlink 4-36 (v1.5)
+199 TTL-1
+188 Galaxy 33 (15R) & 34 (12R)
+188 Hotbird 13F
+195 Starlink 4-37 (v1.5)
+191 Galaxy 31 (23R) & 32 (17R)
+192 Eutelsat 10B
+194 CRS-26
+189 Hotbird 13G
+198 SES-18 & SES-19
+202 Viasat-3 & Arcturus
+193 ispace Mission 1 & Rashid
+197 SWOT
+198 Transporter-6
+ Listening on port 8000 ...
+::1 - - [31/Aug/2025:09:02:54 +0000] "GET /v1/planets HTTP/1.1" 200 243 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+::1 - - [31/Aug/2025:09:02:55 +0000] "GET /v1/launches HTTP/1.1" 200 33886 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+::1 - - [31/Aug/2025:09:11:06 +0000] "GET /v1/launches HTTP/1.1" 200 33886 "-" "PostmanRuntime/7.45.0"
+::1 - - [31/Aug/2025:09:45:12 +0000] "GET /v1/launches HTTP/1.1" 200 33886 "-" "PostmanRuntime/7.45.0"
+::1 - - [31/Aug/2025:09:45:39 +0000] "GET /v1/launches HTTP/1.1" 200 33886 "-" "PostmanRuntime/7.45.0"
+::1 - - [31/Aug/2025:09:45:51 +0000] "GET /v1/launches HTTP/1.1" 200 33886 "-" "PostmanRuntime/7.45.0"
+::1 - - [31/Aug/2025:09:45:57 +0000] "GET /v1/launches HTTP/1.1" 200 33886 "-" "PostmanRuntime/7.45.0"
+::1 - - [31/Aug/2025:09:46:47 +0000] "GET /v1/launches?limit=50&page=1 HTTP/1.1" 200 33886 "-" "PostmanRuntime/7.45.0"

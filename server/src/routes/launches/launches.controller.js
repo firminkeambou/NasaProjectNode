@@ -5,9 +5,13 @@ const {
   existsLaunchWithId,
   abortLaunchById,
 } = require('../../models/launches.model'); // launches is a Map object, so we can use it like a dictionary and "Array.from" to convert it to an array
+const { getPagination } = require('../../services/query');
 
 async function httpGetAllLaunches(req, res) {
-  return res.status(200).json(await getAllLaunches()); //Array.from(launches.values()) the "return" here is quite important as it means stop executing the controller once the response is set and helps us to avoid unnecessary bugs
+  //console.log(req.query);
+  const { limit, skip } = getPagination(req.query);
+  const launches = await getAllLaunches(skip, limit);
+  return res.status(200).json(launches); //Array.from(launches.values()) the "return" here is quite important as it means stop executing the controller once the response is set and helps us to avoid unnecessary bugs
 }
 
 async function httpAddNewLaunch(req, res) {

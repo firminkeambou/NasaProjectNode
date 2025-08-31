@@ -1,4 +1,5 @@
 const http = require('http');
+require('dotenv').config(); // this will load the environment variables from the .env file into process.env
 //const mongoose = require('mongoose');
 //in App, we configured everything related to express
 const app = require('./app');
@@ -7,6 +8,7 @@ const { mongoConnect } = require('./services/mongo');
 // exporting the model which is asynchrone , so we can await it before starting listening requests from the server
 
 const { loadPlanetsData } = require('./models/planets.model');
+const { loadLaunchesData } = require('./models/launches.model');
 
 const PORT = process.env.PORT || 8000;
 
@@ -17,6 +19,7 @@ const server = http.createServer(app); // without "app", the server won't be abl
 async function startServer() {
   await mongoConnect();
   await loadPlanetsData(); //calling of an asynchronous function , especially a promise in this case
+  await loadLaunchesData(); // calling of an asynchronous function , especially a promise in this case
   server.listen(PORT, () => {
     console.log(` Listening on port ${PORT} ...`);
   });

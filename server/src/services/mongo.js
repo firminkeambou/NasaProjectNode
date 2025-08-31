@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-
-const MONGO_URL =
-  'mongodb+srv://admindbuser:admin123@nasaprojectcluster.hpvj4l0.mongodb.net/nasa?retryWrites=true&w=majority&appName=NasaProjectCluster'; // "nasa" here is the name of the database, and it is not a good practice to hardcode it like this, but for the sake of simplicity, we will do it here, if it doesn't exist, it will be created automatically by MongoDB
+require('dotenv').config(); // load environment variables from .env file
+const MONGO_URL = process.env.MONGODB_URI; // we get the connection string from the environment variable
 
 mongoose.connection.once('open', () => {
   // mongoose.connection ==event emitter get called only once when the connection is established
