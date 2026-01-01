@@ -2,6 +2,7 @@ const request = require('supertest');
 // for request to work, we wiil have to import the app from the app.js file, instance of express
 const app = require('../../app'); // Adjust the path as necessary
 const { mongoConnect, mongoDisconnect } = require('../../services/mongo');
+const { loadPlanetsData } = require('../../models/planets.model');
 // before Mongoose, we had each test configured infividually
 // now, with mongoose, we need to add another describe that will wrap all individual test using a call ball,
 //tis way , we are sure the connection is made before any test and
@@ -10,6 +11,7 @@ const { mongoConnect, mongoDisconnect } = require('../../services/mongo');
 describe('TEst Lanches API', () => {
   beforeAll(async () => {
     await mongoConnect();
+    await loadPlanetsData(); //this line is specifically for CI/CD, we need to load the planets data before running any test, especially for CI/CD, because the test database will be empty or locally, we load data when the server starts
   });
   afterAll(async () => {
     await mongoDisconnect();
