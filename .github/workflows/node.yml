@@ -9,6 +9,8 @@ on:
       - master
 jobs:
   build:
+    env:
+      CI: true
     runs-on: ubuntu-latest
 
     strategy:
@@ -25,3 +27,5 @@ jobs:
         run: yarn install
       - name: build frontend
         run: cd ./client && yarn run build
+      - name: run tests
+        run: cd ./server && yarn test && cd ../client && yarn test
