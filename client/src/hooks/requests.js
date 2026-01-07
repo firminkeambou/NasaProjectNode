@@ -1,4 +1,6 @@
-const API_URL = 'http://localhost:8000/v1';
+//const API_URL = 'http://localhost:8000/v1'; //nthis should be used when we run the app locally without docker
+//the above line becomes 'const API_URL = 'v1';' when we dockerize the app, because , the container will detect the right address by itself(relative path) (Hostname and port using service discovery)
+const API_URL = 'v1';
 async function httpGetPlanets() {
   // TODO: Once API is ready. // the following code is added because our API is now ready
   try {
